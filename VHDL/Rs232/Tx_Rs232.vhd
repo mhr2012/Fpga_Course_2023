@@ -41,7 +41,7 @@ begin
 		if	i_Write_pre = '0' and i_Write = '1'	then
 			PKT_Data(0)									<= '0'; 	-- start bit 
 			PKT_Data(8 downto 1)						<= i_Data; 	-- Data
-			PKT_Data(9)									<= i_Data(7) XOR i_Data(6)XOR i_Data(5)XOR i_Data(4)XOR i_Data(3)XOR i_Data(2)XOR i_Data(1)XOR i_Data(0);; -- Data
+			PKT_Data(9)									<= i_Data(7) XOR i_Data(6)XOR i_Data(5)XOR i_Data(4)XOR i_Data(3)XOR i_Data(2)XOR i_Data(1)XOR i_Data(0); -- Data
 			PKT_Data(10)								<= '1';		-- STOP BIT
 			s_busy 										<= '1';
 			s_BaudRate									<= i_BaudRate;
