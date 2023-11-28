@@ -1,0 +1,3 @@
+NET clock LOC=p50;
+NET i_Rx         LOC=p105;
+NET  led   LOC = P88;
